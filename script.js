@@ -8,4 +8,4 @@ function isSameType(value1, value2) {
 	  return false;
   }
 }
-alert(isSameType(value1, value2));
+alert(isSameType(10, "3"));
