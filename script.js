@@ -1,6 +1,6 @@
 function isSameType(value1, value2) {
   // Check if both values are NaN
-  if (Number.isNaN(value1) && Number.isNaN(value2)) {
+  if (Object.is(value1, NaN) && Object.is(value2, NaN)) {
     return true;
   } else if (typeof value1 === typeof value2){
 	  return true;
@@ -8,4 +8,4 @@ function isSameType(value1, value2) {
 	  return false;
   }
 }
-alert(isSameType(10, "3"));
+alert(isSameType(NaN, NaN));
